@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daxxy Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Daxxy Store</h1>
+        <p>Panel Hosting Murah Berkualitas</p>
+    </header>
+
+    <div class="container">
+        <!-- Panel Pterodactyl Public -->
+        <div class="product">
+            <h3>Panel Pterodactyl Public</h3>
+            <p><strong>5GB:</strong> 4K</p>
+            <button onclick="addToCart('Panel Pterodactyl Public 5GB', 4000)">Tambah ke Keranjang</button>
+            <p><strong>Unlimited:</strong> 5K</p>
+            <button onclick="addToCart('Panel Pterodactyl Public Unlimited', 5000)">Tambah ke Keranjang</button>
+            <p><strong>Admin Panel:</strong> 8K</p>
+            <button onclick="addToCart('Admin Panel Public', 8000)">Tambah ke Keranjang</button>
+        </div>
+
+        <!-- Resseler Panel Public -->
+        <div class="product">
+            <h3>Resseler Panel Public</h3>
+            <p><strong>Harga:</strong> 9K</p>
+            <button onclick="addToCart('Resseler Panel Public', 9000)">Tambah ke Keranjang</button>
+        </div>
+
+        <!-- Panel Pterodactyl Private -->
+        <div class="product">
+            <h3>Panel Pterodactyl Private</h3>
+            <p><strong>5GB:</strong> 5K</p>
+            <button onclick="addToCart('Panel Pterodactyl Private 5GB', 5000)">Tambah ke Keranjang</button>
+            <p><strong>Unlimited:</strong> 7K</p>
+            <button onclick="addToCart('Panel Pterodactyl Private Unlimited', 7000)">Tambah ke Keranjang</button>
+            <p><strong>Resseler:</strong> 11K</p>
+            <button onclick="addToCart('Resseler Panel Private', 11000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h3>Keranjang Belanja</h3>
+        <ul id="cart-items"></ul>
+        <p><strong>Total: </strong>Rp <span id="total-price">0</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Daxxy Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
